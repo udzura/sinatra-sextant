@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Sinatra::Sextant::VERSION
   gem.authors       = ["Uchio KONDO"]
   gem.email         = ["udzura@udzura.jp"]
-  gem.description   = %q{TODO: A DSL for Sinatra routing}
-  gem.summary       = %q{TODO: A DSL for Sinatra routing}
+  gem.description   = %q{A fancy DSL for Sinatra routing}
+  gem.summary       = %q{A fancy DSL for Sinatra routing}
   gem.homepage      = "https://github.com/udzura/sinatra-sextant"
 
   gem.files         = `git ls-files`.split($/)
