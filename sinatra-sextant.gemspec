@@ -20,5 +20,6 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'sinatra', '>= 1.3.0'
   gem.add_development_dependency 'rspec', '>= 2.10'
   gem.add_development_dependency 'rack-test', '>= 0'
+  gem.add_development_dependency 'sinatra-contrib', '>= 0'
   gem.add_development_dependency 'pry', '>= 0'
 end
