@@ -37,5 +37,9 @@ module Sinatra
     end
   end
 
+  module Delegator # add methods to delegate
+    delegate :desc, :params
+  end
+
   register Sextant
 end
