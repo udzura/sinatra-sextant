@@ -18,8 +18,10 @@ describe Sinatra::Sextant do
 
     #it { binding.pry }
     specify { raw_app.ancestors.should include Sinatra::Base }
-    specify { raw_app.routes["GET"].should have(1).item }
-    specify { raw_app.routes["HEAD"].should have(1).item }
+    describe "routes defined by 2, 1 default with an application specific route" do
+      specify { raw_app.routes["GET"].should have(1 + 1).item }
+      specify { raw_app.routes["HEAD"].should have(1 + 1).item }
+    end
     specify { raw_app.detailed_routes.should have(1).item }
     it "should not break defining routes" do
       get '/users/1'

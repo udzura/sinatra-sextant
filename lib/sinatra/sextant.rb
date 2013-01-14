@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/sextant/version'
 require 'sinatra/sextant/route_description'
+require 'sinatra/sextant/the_route'
 
 module Sinatra
   module Sextant
@@ -29,6 +30,10 @@ module Sinatra
 
     def detailed_routes
       @detailed_routes ||= []
+    end
+
+    def self.registered(base)
+      base.register TheRoute
     end
   end
 
